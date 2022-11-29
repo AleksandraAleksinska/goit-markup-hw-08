@@ -1,7 +1,7 @@
 .loremSection{
 
   &__list{
-    
+        
     @media screen and (max-width:1200px){
         
       flex-wrap: wrap;
@@ -11,9 +11,8 @@
 }
 
 .loremCard{
-  
-         
-  
+       
+ 
   @media screen and (min-width:480px){
     width: 450px;
                
@@ -37,9 +36,6 @@
     margin-bottom: 30px;
     display:flex;
     
-
-   
-   
     
     &__icon {
         display: flex;

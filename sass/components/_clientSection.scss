@@ -1,5 +1,10 @@
+.client_list{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .clientLogo {
-    width: 170px;
+    
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -13,6 +18,20 @@
         &:focus {
             color: var(--blue);
          }
+
+         @media screen and (min-width:480px){
+            width: 210px;
+                       
+          }
+          
+          @media screen and (min-width:768px){
+            width: 226px;
+                       
+          }
+          @media screen and (min-width:1200px){
+            width: 170px;
+                       
+          }
 
     &__icon {
         fill: currentColor;
