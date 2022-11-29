@@ -1,25 +1,66 @@
-.loremItem {
+.loremSection{
+
+  &__list{
+    
+    @media screen and (max-width:1200px){
+        
+      flex-wrap: wrap;
+      
+    }
+}
+}
+
+.loremCard{
+  
+         
+  
+  @media screen and (min-width:480px){
+    width: 450px;
+               
+  }
+  
+  @media screen and (min-width:768px){
+    width: 354px;
+               
+  }
+  @media screen and (min-width:1200px){
     width: 270px;
+               
+  }
+}
+
+.loremItem {
+    
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 102px;
+    display:flex;
+    
 
+   
+   
+    
     &__icon {
         display: flex;
-        justify-items: center;
-        text-align: center;
+        margin:auto;
       }
       
     &__title {
         font-weight: 700;
         line-height: 1.14;
         margin-bottom: 10px;
+
+        @media screen and (max-width:767px){
+          text-align: center;
+
+               
+        }
+    
       }
     &__desc {
         line-height: 1.71;
         color: var(--grey-primary);
       }
-  }
+    }
   

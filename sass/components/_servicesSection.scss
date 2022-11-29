@@ -1,6 +1,9 @@
 .services {
     margin-top: 94px;
 
+    @media screen and (max-width: 1199px) {
+      display: none;
+  }
     &__photo {
         position: relative;
       }
@@ -20,6 +23,5 @@
         margin: 0;
         z-index: 1;
       }
-  }
- 
-  
+    }
+   
