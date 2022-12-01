@@ -21,17 +21,24 @@
     <title>Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
-      
+    <header class="header">
       <div class="container header--flex">
+       
       <nav class="headerNav">
           <a
-            class="logo animation"
+            class="logo header__logo animation"
             href="#"
             target="_blank"
             title="WebStudio"
             ><span class="logo--highlight">Web</span>Studio
           </a>
+          <div class="hamburger">
+            <button class="hamburger__button" type="submit" title="menu">
+              <svg width="40" height="40">
+                <use xlink: href="./images/icons.svg#icon-mobile-menu" />
+              </svg>
+            </button>
+          </div>
           <ul class="list headerNav__list">
             <li>
               <a
@@ -63,6 +70,7 @@
             </li>
           </ul>
         </nav>
+        
         <ul class="list headerContact__list">
           <li class="headerContact">
             <a class="headerContact__item animation" href="mailto:info@devstudio.com"
@@ -80,10 +88,11 @@
           </li>
         </ul>
         </div> 
-    </header> -->
+    </header> 
     <main>
       <section class="orderSection">
         <div class="container">
+          
           <h1 class="orderSection__header">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
@@ -94,6 +103,7 @@
           >
             Zamów usługę
           </button>
+        
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal__closeButton" type="submit" data-modal-close>
