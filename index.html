@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -23,6 +24,102 @@
   <body>
     <header class="header">
       <div class="container header--flex">
+       <div class="menuMobile__overley data-menu ">
+        <div class="menuMobile">
+        <button class="menuMobile__closeButton" type="button" data-menu-close>
+          <svg class="menuMobile__closeIcon"
+          width="18.67"
+          height="18.67">
+            <use xlink:href="./images/icons.svg#icon-close-button" />
+          </svg>
+        </button>
+        <ul class="mobileNav">
+          <li>
+            <a
+              class="mobileNav__link animation"
+              href="./index.html"
+              target="_self"
+              title="Agencja"
+            >
+              Agencja</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobileNav__link animation"
+              href="./portfolio.html"
+              target="_self"
+              title="Portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobileNav__link animation"
+              href="#"
+              target="_self"
+              title="Kontakt"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <ul class="mobileContact">
+          <li>
+            <a class="mobileContact__tel animation" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a class="mobileContact__mail animation" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobileSocials">
+          <li class="mobileSocials__item">
+            <a
+              class="mobileSocials__link animation"
+              href="#"
+              target="_self"
+              title="Instagram"
+            >
+              Instagram</a
+            >
+          </li>
+          <li class="mobileSocials__item">
+            <a
+              class="mobileSocials__link animation"
+              href="#"
+              target="_self"
+              title="Twitter"
+            >
+              Twitter</a
+            >
+          </li>
+          <li class="mobileSocials__item">
+            <a
+              class="mobileSocials__link animation"
+              href="#"
+              target="_self"
+              title="Facebook"
+            >
+              Facebook</a
+            >
+          </li>
+          <li class="mobileSocials__item">
+            <a
+              class="mobileSocials__link animation"
+              href="#"
+              target="_self"
+              title="Linkedin"
+            >
+              Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+      </div>
+       
        
       <nav class="headerNav">
           <a
@@ -33,7 +130,7 @@
             ><span class="logo--highlight">Web</span>Studio
           </a>
           <div class="hamburger">
-            <button class="hamburger__button" type="submit" title="menu">
+            <button class="hamburger__button" type="button" title="menu" data-menu-open>
               <svg width="40" height="40">
                 <use xlink: href="./images/icons.svg#icon-mobile-menu" />
               </svg>
@@ -281,16 +378,23 @@
           </div>
         </section>
        </div>
-    <!-- <div class="member">
+       <div class="member">
       <section class="section">
         <div class="container">
           <h2 class="sectionTitle">Nasz zespół</h2>
-          <ul class="list">
+          <ul class="list member__list">
             <li class="member__card">
-              <img
-                src="./images/photo-product-designer.jpg"
-                width="270"
-                height="260"
+              <img 
+                src="./images/photo-product-designer/pd-450x460.jpg"
+                srcset="
+                ./images/photo-product-designer/pd-450x460.jpg 450w,
+                ./images/photo-product-designer/pd-450x460@2x.jpg 900w,
+                ./images/photo-product-designer/pd-354x374.jpg 354w,
+                ./images/photo-product-designer/pd-354x374@2x.jpg 708w,
+                ./images/photo-product-designer/pd-270x260.jpg 270w,
+                ./images/photo-product-designer/pd-270x260@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 alt="zdjęcie Product Designera"
                 title="zdjęcie Product Designera"
               />
@@ -357,9 +461,15 @@
             </li>
             <li class="member__card">
               <img
-                src="./images/photo-frontend-developer.jpg"
-                width="270"
-                height="260"
+                src="./images/photo-frontend-developer/fd-450x460.jpg"
+                srcset="
+                ./images/photo-frontend-developer/fd-450x460.jpg 450w,
+                ./images/photo-frontend-developer/fd-450x460@2x.jpg 900w,
+                ./images/photo-frontend-developer/fd-354x374.jpg 354w,
+                ./images/photo-frontend-developer/fd-354x374@2x.jpg 708w,
+                ./images/photo-frontend-developer/fd-270x260.jpg 270w,
+                ./images/photo-frontend-developer/fd-270x260@2x.jpg 540w
+                "
                 alt="zdjęcie Frontend Developera"
                 title="zdjęcie Frontend Developera"
               />
@@ -426,9 +536,15 @@
             </li>
             <li class="member__card">
               <img
-                src="./images/photo-marketing.jpg"
-                width="270"
-                height="260"
+                src="./images/photo-marketing/m-450x460.jpg"
+                srcset="
+                ./images/photo-marketing/m-450x460.jpg 450w,
+                ./images/photo-marketing/m-450x460@2x.jpg 900w,
+                ./images/photo-marketing/m-354x374.jpg 354w,
+                ./images/photo-marketing/m-354x374@2x.jpg 708w,
+                ./images/photo-marketing/m-270x260.jpg 270w,
+                ./images/photo-marketing/m-270x260@2x.jpg 540w
+                "
                 alt="zdjęcie specjalisty ds marketingu"
                 title="zdjęcie specjalisty ds marketingu"
               />
@@ -495,9 +611,15 @@
             </li>
             <li class="member__card">
               <img
-                src="./images/photo-ul-designer.jpg"
-                width="270"
-                height="260"
+                src="./images/photo-ul-designe/ud-450x460.jpg"
+                srcset="
+                ./images/photo-ul-designe/ud-450x460.jpg 450w,
+                ./images/photo-ul-designe/ud-450x460@2x.jpg 900w,
+                ./images/photo-ul-designe/ud-354x374.jpg 354w,
+                ./images/photo-ul-designe/ud-354x374@2x.jpg 708w,
+                ./images/photo-ul-designe/ud-270x260.jpg 270w,
+                ./images/photo-ul-designe/ud-270x260@2x.jpg 540w
+                "
                 alt="zdjęcie Ul Designera"
                 title="zdjęcie Ul Designera"
               />
@@ -565,7 +687,7 @@
           </ul>
         </div>
       </section>
-    </div> -->
+    </div>
        <section class="section">
         <div class="container">
           <h2 class="sectionTitle">Nasi klienci</h2>
@@ -743,5 +865,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="js/menuMobile.js"></script>
   </body>
 </html>

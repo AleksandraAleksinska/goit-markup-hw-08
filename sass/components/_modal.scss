@@ -37,6 +37,10 @@
           width: 448px;
           
         }
+        @media screen and (max-width: 479px) {
+          width: 100%;
+          
+        }
         
       }
 
@@ -70,6 +74,11 @@
     height: 58px;
     margin-bottom: 10px;
 
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      
+    }
+
     &__fieldset {
         display: flex;
         align-items: center;
@@ -88,6 +97,10 @@
 
         @media screen and (min-width: 1200px) {
           width: 448px;
+          
+        }
+        @media screen and (max-width: 479px) {
+          width: 100%;
           
         }
 
@@ -147,6 +160,11 @@
 
         @media screen and (min-width: 1200px) {
           width: 448px;
+          
+        }
+
+        @media screen and (max-width: 479px) {
+          width: 100%;
           
         }
 

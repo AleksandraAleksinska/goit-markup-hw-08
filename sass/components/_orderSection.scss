@@ -6,20 +6,26 @@
       url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     color: var(--white);
     text-align: center;
     max-width: 1600;
     padding-block: 118px;
     margin: 0 auto;
-    
     align-items: center;
 
-//     &__box{
-//         width: 365px;
-// height: 164px;
-// display: flex;
-// flex-direction: column;
-//     }
+    @media screen and (min-width:1200px){
+    padding-block:200px;
+                 
+    }
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx){
+      .orderSection{
+        background-image: url(../images/background@2x.jpg);
+      }
+    }
 
     &__header {
         font-weight: 900;
@@ -33,10 +39,8 @@
         @media screen and (min-width:480px){
             width: 365px;
                        
-          }
-                                
-          
-        
+          }                      
+                
         @media screen and (min-width:1200px){
             width: 696px;
             font-size: 44px;
