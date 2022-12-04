@@ -75,6 +75,12 @@
       font-size: 40px;
       line-height: 1.18;
       letter-spacing: 0.02em;
+
+      &--highlight{
+        color:var(--blue);
+      }
+    }
+      
     }
     
 }
@@ -119,4 +125,4 @@
       }
 
     }
-  }
+  

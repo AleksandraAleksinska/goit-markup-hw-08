@@ -1,32 +1,39 @@
 .loremSection{
 
+  @media screen and (min-width:768px){
+    padding-bottom: 45px;
+     
+              
+  }
+  @media screen and (min-width:1200px){
+    padding-bottom: 0px;
+     
+              
+  }
+
   &__list{
 
-  display:block;
+    display:flex;  
+    flex-wrap: wrap;
   
         
-    @media screen and (min-width:768px) {
-      display:flex;  
-      flex-wrap: wrap;
-      
-    }
+    
 }
 }
 
 .loremCard{
 
-  width:100%;
-  margin-bottom: 30px;
-  
-       
  
   @media screen and (min-width:480px){
     width: 450px;
-               
+                   
   }
   
   @media screen and (min-width:768px){
     width: 354px;
+
+   
+    
                
   }
   @media screen and (min-width:1200px){
@@ -51,13 +58,14 @@
       
     &__title {
         font-weight: 700;
+        font-size: 14px;
         line-height: 1.14;
         margin-bottom: 10px;
         text-align: center;
 
         @media screen and (min-width:768px){
           text-align: left;
-
+          
                
         }
     
