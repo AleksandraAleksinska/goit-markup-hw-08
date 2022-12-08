@@ -72,8 +72,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:active,
     &:hover,
-    &:focus {
+    &:focus
+     {
       background-color: var(--blue);
     }
 

@@ -64,25 +64,22 @@
         color: inherit; 
         position: relative;
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -29px;
-            left: 0px;
-            height: 4px;
-            background-color: var(--blue);
-            border-radius: 2px;
-            width: 0;
-            transition-property: width;
-        }
-        
-        &:focus:after,
-        &:active:after {
-            width: 100%;
-        }
-    
-  }
+         }
 }
+
+.currentPage::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0px;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  width: 0;
+  transition-property: width;
+  width:100%;
+}
+
 .headerContact {
     gap: 10px;
     
