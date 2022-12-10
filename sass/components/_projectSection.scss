@@ -3,7 +3,9 @@
 
     &__list {
         flex-wrap: wrap;
-     }
+
+      }
+   
 
     &__title {
        font-weight: 700;
@@ -28,6 +30,18 @@
        width: 450px;
        height: 404px;
 
+       @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        height: fit-content;
+        .firstCard{
+          padding-bottom: 56px;
+        }
+      }
+       @media screen and (min-width: 1200px) {
+        width: 370px;
+        }
+
+        
        &:hover,
        &:focus {
          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -40,11 +54,12 @@
      }
          
     &__desc {
+      
        padding: 20px 24px;
        border: solid 1px #eeeeee;
      }
   }
-
+ 
   .overlay {
     position: absolute;
     width: 100%;
@@ -64,6 +79,16 @@
         font-size: 18px;
         line-height: 1.56;
         color: var(--white);
+
+        @media screen and (min-width: 768px){
+          font-size: 16px;
+          top:83px;
+        }
+        @media screen and (min-width: 1200px){
+          font-size: 18px;
+          top:49px;
+        }
+
       }
   }
 
