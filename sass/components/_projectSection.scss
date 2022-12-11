@@ -80,15 +80,10 @@
         line-height: 1.56;
         color: var(--white);
 
-        @media screen and (min-width: 768px){
-          font-size: 16px;
-          top:83px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 17px;
         }
-        @media screen and (min-width: 1200px){
-          font-size: 18px;
-          top:49px;
-        }
-
+   
       }
   }
 
